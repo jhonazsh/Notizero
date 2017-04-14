@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/','IndexController@index');
-Route::get('/noticia','NoticiaController@index');
-Route::get('/nosotros','NoticiaController@nosotros');
+
+Route::get('/', 'IndexController@index');
+Route::get('/noticia', 'NoticiaController@index');
+Route::get('/noticia/nueva', 'NoticiaController@nueva');
+Route::post('/noticia/crear', 'NoticiaController@crear');
