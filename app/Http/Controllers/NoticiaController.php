@@ -15,4 +15,17 @@ class NoticiaController extends Controller
    public function piura(){
    		return view('otra');
    }
+
+   public function nueva(){
+   		return view('crear_noticia');
+   }
+
+   public function crear(Request $request){
+   		\App\Noticia::create([
+   			'titulo'=> $request['titulo'],
+   			'contenido'=> $request['contenido']
+   		]);
+
+   		return redirect('/');
+   }
 }
