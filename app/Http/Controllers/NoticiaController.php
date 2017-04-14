@@ -12,7 +12,7 @@ class NoticiaController extends Controller
    		return view('noticia', compact('nombre','edad'));
    }
 
-   public function piura(){
-   		return view('otra');
+   public function nosotros(){
+   		return "ola chavo";
    }
 }
